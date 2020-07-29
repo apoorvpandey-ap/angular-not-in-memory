@@ -1,0 +1,12 @@
+<h2>My Employees</h2>
+
+
+<ul class="heroes">
+  <li *ngFor="let employee of employees">
+    <a routerLink="/{{employee.id}}">
+      <span class="badge">{{employee.id}}</span> {{employee.name}}
+    </a>
+    <button class="delete" title="delete employee"
+      (click)="delete(employee)">x</button>
+  </li>
+</ul>
