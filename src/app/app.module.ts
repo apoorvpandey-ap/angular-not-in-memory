@@ -16,6 +16,8 @@ import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
@@ -39,7 +41,9 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
     MessagesComponent,
     HeroSearchComponent,
     EmployeesComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   bootstrap: [ AppComponent ]
 })

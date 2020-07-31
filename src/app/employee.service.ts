@@ -12,8 +12,9 @@ import { MessageService } from './message.service';
 export class EmployeeService {
 
   //private heroesUrl = 'api/heroes';  // URL to web api
- private employeesUrl = 'http://www.omdbapi.com/?i=tt3896198&apikey=20e4fed8';  // URL to web api
- //private employeesUrl = 'http://rupesh:8080/api/v1/employees';  // URL to web api
+ //private employeesUrl = 'http://www.omdbapi.com/?i=tt3896198&apikey=20e4fed8';  // URL to web api
+ private employeesUrl = 'http://rupesh:8080/api/v1/employees';  // URL to web api
+ //private employeesUrl = "https://raw.githubusercontent.com/apoorvpandey-ap/angular-not-in-memory/master/employee.json";
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
