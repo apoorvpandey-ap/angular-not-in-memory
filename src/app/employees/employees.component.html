@@ -1,6 +1,6 @@
-<h2>My Employees</h2>
+<h2 class="center">My Employees</h2>
 
-
+<div class="center">
 <ul class="heroes">
   <li *ngFor="let employee of employees">
     <a routerLink="/{{employee.id}}">
@@ -10,3 +10,4 @@
       (click)="delete(employee)">x</button>
   </li>
 </ul>
+</div>

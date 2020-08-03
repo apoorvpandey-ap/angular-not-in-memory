@@ -1,10 +1,15 @@
-<div> 
-    <h4>{{employee.name | uppercase}}  Details</h4>
-    <div><span>id: </span>{{employee.id}}</div>
-    <div>
-        <label>name:
-            <input [(ngModel)]="employee.name" placehold="name"/>
-        </label>
-    </div>
-    <button (click)="goBack()">go back</button>
-<div>
+
+    <h4 class="center" >{{employee.name | uppercase}}  Details</h4>
+    <div class="center" >
+    <table >
+        <tr>
+            <td>id:</td><td>{{employee.id}}</td>
+        </tr>
+        <tr>
+            <td>name:</td><td>:<input [(ngModel)]="employee.name" placehold="name"/></td>
+        </tr>           
+        
+    </table>
+</div>
+    
+    <button (click)="goBack()" class="center" >go back</button>
