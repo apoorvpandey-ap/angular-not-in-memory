@@ -26,3 +26,19 @@ h1 {
   nav a.active {
     color: #039be5;
   }
+  .modal-dialog {
+    position: absolute;
+    top: 50%;
+    /*half of the modal height*/
+    margin-top: -100px;
+    left: 50%;
+    /*half of the modal width*/
+    margin-left: -180px;
+}
+.basic-container {
+  padding: 30px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}

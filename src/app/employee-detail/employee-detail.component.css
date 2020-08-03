@@ -28,3 +28,7 @@ label {
     color: #ccc;
     cursor: auto;
   }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
