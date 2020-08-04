@@ -18,6 +18,9 @@ import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { HeaderComponent }         from './header/header.component';
 import { FooterComponent }         from './footer/footer.component';
+import { CameraComponent } from './camera/camera.component';
+import { FingerprintComponent } from './fingerprint/fingerprint.component';
+import { SignatureComponent } from './signature/signature.component';
 
 @NgModule({
   imports: [
@@ -25,6 +28,7 @@ import { FooterComponent }         from './footer/footer.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    //WebcamModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
@@ -43,7 +47,10 @@ import { FooterComponent }         from './footer/footer.component';
     FooterComponent,
     HeroSearchComponent,
     EmployeesComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    CameraComponent,
+    FingerprintComponent,
+    SignatureComponent
   ],
   bootstrap: [ AppComponent ]
 })
