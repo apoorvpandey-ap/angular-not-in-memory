@@ -21,6 +21,7 @@ import { FooterComponent }         from './footer/footer.component';
 import { CameraComponent } from './camera/camera.component';
 import { FingerprintComponent } from './fingerprint/fingerprint.component';
 import { SignatureComponent } from './signature/signature.component';
+import {WebcamModule} from './modules/webcam/webcam.module';
 
 @NgModule({
   imports: [
@@ -28,7 +29,7 @@ import { SignatureComponent } from './signature/signature.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    //WebcamModule,
+    WebcamModule
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
