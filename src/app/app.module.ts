@@ -19,7 +19,7 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { HeaderComponent }         from './header/header.component';
 import { FooterComponent }         from './footer/footer.component';
 import { CameraComponent } from './camera/camera.component';
-import { FingerprintComponent } from './fingerprint/fingerprint.component';
+//import { FingerprintComponent } from './fingerprint/fingerprint.component';
 import { SignatureComponent } from './signature/signature.component';
 import {WebcamModule} from './modules/webcam/webcam.module';
 
@@ -50,7 +50,7 @@ import {WebcamModule} from './modules/webcam/webcam.module';
     EmployeesComponent,
     EmployeeDetailComponent,
     CameraComponent,
-    FingerprintComponent,
+//FingerprintComponent,
     SignatureComponent
   ],
   bootstrap: [ AppComponent ]
