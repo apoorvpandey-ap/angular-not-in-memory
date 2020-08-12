@@ -1,15 +1,26 @@
 
-    <h4 class="center" >{{employee.name | uppercase}}  Details</h4>
+    <h4 class="center" >{{employee.firstName | uppercase}}  Details</h4>
     <div class="center" >
     <table >
         <tr>
             <td>id:</td><td>{{employee.id}}</td>
         </tr>
         <tr>
-            <td>name:</td><td>:<input [(ngModel)]="employee.name" placehold="name"/></td>
-        </tr>           
-        
+            <td>first name:</td><td><input [(ngModel)]="employee.firstName" placehold="firstName"/></td>
+        </tr>
+        <tr>
+          <td>last name:</td><td><input [(ngModel)]="employee.lastName" placehold="lastName"/></td>
+      </tr>
+        <tr>
+          <td>email:</td><td><input [(ngModel)]="employee.emailId" placehold="emailId"/></td>
+      </tr>
+      <tr>
+        <td>photo:</td><td><input [(ngModel)]="employee.photo" placehold="photo"/></td>
+    </tr>
+    <tr>
+      <td colspan="2">    <button (click)="goBack()" class="center" >go back</button></td>
+    </tr>
     </table>
 </div>
-    
-    <button (click)="goBack()" class="center" >go back</button>
+
+

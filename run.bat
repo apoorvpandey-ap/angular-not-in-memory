@@ -1,12 +1,13 @@
 cls
 ng serve --host 0.0.0.0 --disable-host-check --ssl true
-#ng serve --host 0.0.0.0 --disable-host-check 
+#ng serve --host 0.0.0.0 --disable-host-check
 #ng serve
 #20200803
-##to generate a component 
+##to generate a component
 #ng generate component camera
 #ng generate component fingerprint
 #ng generate component signaturepad
+#ng generate component employee-search
 #cmd.exe /c 'run.bat'
 #ng build --prod --base-href=angular
 #below command does not work at run time. many css is not found

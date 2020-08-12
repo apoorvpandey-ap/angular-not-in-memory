@@ -3,7 +3,7 @@
 <div class="center">
 <ul class="heroes">
   <li *ngFor="let employee of employees">
-    <a routerLink="/{{employee.id}}">
+    <a routerLink="/employees/{{employee.id}}">
       <span class="badge">{{employee.id}}</span> {{employee.name}}
     </a>
     <button class="delete" title="delete employee"
