@@ -2,7 +2,11 @@
     <h1>
       Ngx-Webcam Demo
     </h1>
-  
+    <style>
+      body {
+        background-image: url('https://images.app.goo.gl/QYSZd6ujw6XfBbkaA');
+      }
+      </style>
     <div>
       <webcam [height]="500" [width]="500" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"
               [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable"
