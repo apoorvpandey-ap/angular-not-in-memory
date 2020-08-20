@@ -3,15 +3,14 @@ import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employee';
 import { EmployeeService } from '../employee.service';
 
-//import {MatCardModule} from '@angular/material/card';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-employee',
-  templateUrl: './employees.component.html',
-  styleUrls: ['./employees.component.css']
+  templateUrl: './employees.card.component.html',
+  styleUrls: ['./employees.card.component.scss']
 })
-export class EmployeesComponent implements OnInit {
+export class EmployeesCardComponent implements OnInit {
   employees: Employee[];
 
   constructor(private employeeService: EmployeeService) { }

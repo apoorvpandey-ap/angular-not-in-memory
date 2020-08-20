@@ -50,6 +50,7 @@ export class EmployeeService {
   /** GET employee by id. Will 404 if id not found */
   getEmployee(id: number): Observable<Employee> {
     const url = `${this.employeesUrl}/${id}`;
+
     return this.http.get<Employee>(url).pipe(
       tap(_ => this.log(`fetched employee id=${id}`)),
       catchError(this.handleError<Employee>(`getEmployee id=${id}`))

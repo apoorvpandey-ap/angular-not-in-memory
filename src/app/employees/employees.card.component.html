@@ -1,0 +1,14 @@
+<h2 class="center"></h2>
+
+
+
+<div class="container">
+  <h2>Active Item in a List Group</h2>
+  <div class="list-group" *ngFor="let employee of employees">
+
+      <a routerLink="/employees/{{employee.id}}" class="list-group-item ">
+        <span class="badge">{{employee.id}}</span> {{employee.name}}
+      </a>
+
+  </div>
+</div>

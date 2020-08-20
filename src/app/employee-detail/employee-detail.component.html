@@ -1,26 +1,39 @@
+<input [(ngModel)]="employee.name" type="text" class="form-control col-lg-12" id="firstName" placeholder="First Name" />
+<section>
 
-    <h4 class="center" >{{employee.firstName | uppercase}}  Details</h4>
-    <div class="center" >
-    <table >
-        <tr>
-            <td>id:</td><td>{{employee.id}}</td>
-        </tr>
-        <tr>
-            <td>first name:</td><td><input [(ngModel)]="employee.firstName" placehold="firstName"/></td>
-        </tr>
-        <tr>
-          <td>last name:</td><td><input [(ngModel)]="employee.lastName" placehold="lastName"/></td>
-      </tr>
-        <tr>
-          <td>email:</td><td><input [(ngModel)]="employee.emailId" placehold="emailId"/></td>
-      </tr>
-      <tr>
-        <td>photo:</td><td><input [(ngModel)]="employee.photo" placehold="photo"/></td>
-    </tr>
-    <tr>
-      <td colspan="2">    <button (click)="goBack()" class="center" >go back</button></td>
-    </tr>
-    </table>
-</div>
+  <div class=" container">
+          <form >
+     <div class="text-center padding"><h2> Employee Details</h2>
+    </div>
+    <div class="form-group row">
+
+            <div class="form-row ">
+                <div class="form-group col-md-6">
+                    <label for="firstName" class="form-label col-lg-12">First Name</label>
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName" class="form-label col-lg-12">Last Name</label>
+                    <input type="text" class="form-control col-lg-12" id="lastName" placeholder="Last Name">
+                </div>
+        <div class="form-group col-md-6">
+                          <label for="email" class="form-label col-lg-12">Email  Id</label>
+                          <input type="password" class="form-control col-lg-12" id="email" placeholder="mail">
+        </div>
+        <div class="form-group col-md-6">
+                    <label for="password" class="form-label col-lg-12">password</label>
+                    <input type="text" class="form-control col-lg-12" id="lastName" placeholder="password">
+        </div>
+        <div class="form-group col-lg-6">
+                <a  class="btn btn-primary padding-top text-white">Submit</a>
+                <a  class="btn btn-danger padding-top text-white">cancel</a>
+
+        </div>
+
+      </div>
+   </div>
+    </form>
+  </div><!--contianer div closed-->
+  </section>
 
 

@@ -15,6 +15,7 @@ import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { EmployeesCardComponent } from './employees/employees.card.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { HeaderComponent }         from './header/header.component';
 import { FooterComponent }         from './footer/footer.component';
@@ -23,6 +24,9 @@ import { CameraComponent } from './camera/camera.component';
 import { SignatureComponent } from './signature/signature.component';
 import {WebcamModule} from './modules/webcam/webcam.module';
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+//import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
@@ -30,8 +34,9 @@ import { EmployeeSearchComponent } from './employee-search/employee-search.compo
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    WebcamModule
-
+    WebcamModule,
+    BrowserAnimationsModule,
+    MatCardModule
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
@@ -49,11 +54,13 @@ import { EmployeeSearchComponent } from './employee-search/employee-search.compo
     FooterComponent,
     HeroSearchComponent,
     EmployeesComponent,
+    EmployeesCardComponent,
     EmployeeDetailComponent,
     CameraComponent,
 //FingerprintComponent,
     SignatureComponent,
-EmployeeSearchComponent
+    EmployeeSearchComponent
+    //FlexLayoutModule
   ],
   bootstrap: [ AppComponent ]
 })
