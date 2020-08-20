@@ -14,7 +14,7 @@ export class EmployeeService {
   //private heroesUrl = 'api/heroes';  // URL to web api
  //private employeesUrl = 'http://www.omdbapi.com/?i=tt3896198&apikey=20e4fed8';  // URL to web api
  //private employeesUrl = 'http://rupesh:8080/api/v1/employees';  // URL to web api
- private employeesUrl = 'https://www6c.virtualdoxx.com/boot2-employee-20200705/api/v1/employees/';
+ private employeesUrl = 'https://www6c.virtualdoxx.com/boot2/api/v1/employees/';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -62,10 +62,10 @@ export class EmployeeService {
       // if not search term, return empty employee array.
       return of([]);
     }
-    return this.http.get<Employee[]>(`${this.employeesUrl}/?name=${term}`).pipe(
+    return this.http.get<Employee[]>(`${this.employeesUrl}/findByName/${term}`).pipe(
       tap(x => x.length ?
-         this.log(`found heroes matching "${term}"`) :
-         this.log(`no heroes matching "${term}"`)),
+         this.log(`found employees matching "${term}"`) :
+         this.log(`no employees matching "${term}"`)),
       catchError(this.handleError<Employee[]>('searchEmployees', []))
     );
   }

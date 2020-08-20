@@ -22,6 +22,7 @@ import { CameraComponent } from './camera/camera.component';
 //import { FingerprintComponent } from './fingerprint/fingerprint.component';
 import { SignatureComponent } from './signature/signature.component';
 import {WebcamModule} from './modules/webcam/webcam.module';
+import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 
 @NgModule({
   imports: [
@@ -51,7 +52,8 @@ import {WebcamModule} from './modules/webcam/webcam.module';
     EmployeeDetailComponent,
     CameraComponent,
 //FingerprintComponent,
-    SignatureComponent
+    SignatureComponent,
+EmployeeSearchComponent
   ],
   bootstrap: [ AppComponent ]
 })
